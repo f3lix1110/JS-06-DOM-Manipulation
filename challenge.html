@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    </div>
+    <section id="container">
+        <ul>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ul>
+        <ol>
+            <li class="first">one</li>
+            <li class="second">two</li>
+            <li class="third">three</li>
+        </ol>
+    </section>
+    <div class="footer">
+    </div>
+</body>
+<script>
+
+// Challenge Yourself
+// Add on to Exercise #4
+// Loop over all the li inside the ol tag and give them a background "green" color.
+// Remove the div with a footer class.
+
+var liInsideOl = document.querySelectorAll("ol");
+for(var i = 0; i < liInsideOl.length; i++){
+    liInsideOl[i].style.backgroundColor = "green";
+  
+}
+
+var footer = document.querySelector(".footer");
+footer.remove();
+
+
+</script>
+</html>

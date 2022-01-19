@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset=utf-8 />
+      <title>Return first and last name from a form - w3resource</title>
+    </head>
+    
+    <body>
+        
+        <div>
+            <nav>
+                <a id="link" href="http://google.com">Google</a>
+                <a id="link2" href="http://facebook.com">Facebook</a>
+                <button id="jsstyle" onclick="getAll()">All</button>
+            </nav>
+            
+        </div>
+     
+      <script>
+//           Exercise #3
+// Write a function and call it when clicking a button to show an alert with:
+
+// The number of links on the page
+// The first link in the page
+// The last link in the page
+
+    function getAll(){
+        var l = document.getElementsByTagName('a').length;
+        //alert(l);
+        var content = document.getElementById('link').innerHTML;
+        //alert(link);
+        var content1 = document.getElementById('link2').innerHTML;
+        //alert(link2);
+        alert("Numero de links: " +l+ "\nPrimera pagina: " +link+ "\nSegundo link: " +link2);
+        
+
+}
+      </script>
+    </body>
+</html>

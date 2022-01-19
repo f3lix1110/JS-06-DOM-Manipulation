@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=utf-8 />
+    <title>JS DOM paragraph style</title>
+  </head> 
+  
+  <body>
+    <p id="text">JavaScript Exercises #1</p> 
+    <div>
+      <button id="jsstyle" onclick="js_style()">Style</button>
+    </div>
+  </body>
+
+  <script>
+//       Exercise #1
+// Modify the style of the paragraph text through javascript code. Sample HTML file:
+    function js_style(){
+    var contenido = document.getElementById("text");
+    contenido.style.fontSize = "30px";
+    contenido.style.fontFamily = "sans-serif";
+    contenido.style.color = "red";
+}
+
+  </script>
+</html>
